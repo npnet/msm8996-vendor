@@ -1,0 +1,16 @@
+/*
+ * Copyright (c) 2020 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ */
+
+package vendor.qti.gnss@4.0;
+import ILocHidlGnssConfigServiceCallback;
+import @2.1::ILocHidlGnssConfigService;
+
+interface ILocHidlGnssConfigService extends @2.1::ILocHidlGnssConfigService{
+    init_4_0(ILocHidlGnssConfigServiceCallback callback) generates (bool success);
+    setGnssSvTypeConfig_4_0(vec<GnssConstellationType> disabledSvTypeList);
+};
+
